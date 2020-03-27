@@ -18,6 +18,7 @@
 		FAB43B6D242D73E7007B8F50 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B6C242D73E7007B8F50 /* Responses.swift */; };
 		FAB43B91242DD31E007B8F50 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B90242DD31E007B8F50 /* MovieCell.swift */; };
 		FAB43B93242DD3D8007B8F50 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B92242DD3D8007B8F50 /* MovieTableViewController.swift */; };
+		FAB43B95242DE857007B8F50 /* ParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B94242DE857007B8F50 /* ParametersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FAB43B6C242D73E7007B8F50 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		FAB43B90242DD31E007B8F50 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FAB43B92242DD3D8007B8F50 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		FAB43B94242DE857007B8F50 /* ParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				FAB43B5A242D0441007B8F50 /* ViewController.swift */,
 				FAB43B92242DD3D8007B8F50 /* MovieTableViewController.swift */,
 				FAB43B6A242D7380007B8F50 /* Fetcher.swift */,
+				FAB43B94242DE857007B8F50 /* ParametersViewController.swift */,
 				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
 				FAB43B5C242D0441007B8F50 /* Main.storyboard */,
 				FAB43B90242DD31E007B8F50 /* MovieCell.swift */,
@@ -222,6 +225,7 @@
 				FAB43B6D242D73E7007B8F50 /* Responses.swift in Sources */,
 				FAB43B91242DD31E007B8F50 /* MovieCell.swift in Sources */,
 				FAB43B5B242D0441007B8F50 /* ViewController.swift in Sources */,
+				FAB43B95242DE857007B8F50 /* ParametersViewController.swift in Sources */,
 				FAB43B57242D0441007B8F50 /* AppDelegate.swift in Sources */,
 				FAB43B59242D0441007B8F50 /* SceneDelegate.swift in Sources */,
 				FAB43B93242DD3D8007B8F50 /* MovieTableViewController.swift in Sources */,

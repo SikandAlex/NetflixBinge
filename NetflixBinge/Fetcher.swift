@@ -12,9 +12,24 @@ import Foundation
 final class Fetcher {
 
   var shows: [Show] = []
-  private let domainUrlString = "https://unogsng.p.rapidapi.com/search?country_andorunique=unique&limit=100&countrylist=78&offset=0&type=series&start_rating=7&end_rating=10"
   
-  func fetchShows(completionHandler: @escaping ([Show]) -> Void) {
+  
+    func fetchShows(category: String, startRating: Int, endRating: Int, completionHandler: @escaping ([Show]) -> Void) {
+        var cat = ""
+        if category == "Movies" {
+            cat = "movie"
+        }
+        else if category == "TV Shows" {
+            cat = "series"
+        }
+        print(cat)
+        let domainUrlString = "https://unogsng.p.rapidapi.com/search?type=" + cat + "&start_rating=" + String(startRating) + "&end_rating=" + String(endRating)
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print(domainUrlString)
     let url = URL(string: domainUrlString)!
     let session = URLSession.shared
     var request = URLRequest(url: url)
@@ -37,6 +52,7 @@ final class Fetcher {
 
       if let data = data {
         if let jsonString = String(data: data, encoding: .utf8) {
+            print(jsonString)
             let res = try? JSONDecoder().decode(ShowData.self, from: jsonString.data(using: .utf8)!)
             completionHandler(res?.results ?? [])
         }

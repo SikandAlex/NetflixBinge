@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLC-6t-uXi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vha-W2-e9Q">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -22,10 +22,100 @@
             </objects>
             <point key="canvasLocation" x="-196" y="39"/>
         </scene>
+        <!--Parameters View Controller-->
+        <scene sceneID="k5J-5W-9SB">
+            <objects>
+                <viewController id="Vha-W2-e9Q" customClass="ParametersViewController" customModule="NetflixBinge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HzK-gS-Me1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odw-gK-pTn" customClass="TTRangeSlider">
+                                <rect key="frame" x="87" y="200" width="240" height="101"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMinimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMaximum">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableStep" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laC-FL-CRH">
+                                <rect key="frame" x="176.5" y="521" width="61" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="jDq-fm-74e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="search:" destination="Vha-W2-e9Q" eventType="touchUpInside" id="uZJ-03-fPO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDB Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-zB-KOB">
+                                <rect key="frame" x="71" y="168" width="272" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koI-gg-jng">
+                                <rect key="frame" x="0.0" y="330" width="414" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="OWM-HP-uva"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Parameters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF5-Ug-88f">
+                                <rect key="frame" x="116" y="68" width="183" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qml-zB-KOB" firstAttribute="centerX" secondItem="odw-gK-pTn" secondAttribute="centerX" id="0Bq-Dq-5DU"/>
+                            <constraint firstItem="odw-gK-pTn" firstAttribute="top" secondItem="Qml-zB-KOB" secondAttribute="bottom" constant="8" id="6g6-UX-WQh"/>
+                            <constraint firstItem="RF5-Ug-88f" firstAttribute="centerX" secondItem="HzK-gS-Me1" secondAttribute="centerX" id="FF3-jh-T8w"/>
+                            <constraint firstItem="Q7z-W0-SzN" firstAttribute="bottom" secondItem="laC-FL-CRH" secondAttribute="bottom" constant="305" id="HiT-9h-bgm"/>
+                            <constraint firstItem="koI-gg-jng" firstAttribute="top" secondItem="odw-gK-pTn" secondAttribute="bottom" constant="29" id="WCG-9r-Zkt"/>
+                            <constraint firstItem="koI-gg-jng" firstAttribute="leading" secondItem="Q7z-W0-SzN" secondAttribute="leading" id="XX2-OJ-NAo"/>
+                            <constraint firstItem="koI-gg-jng" firstAttribute="centerX" secondItem="laC-FL-CRH" secondAttribute="centerX" id="bIA-gb-nFM"/>
+                            <constraint firstItem="RF5-Ug-88f" firstAttribute="leading" secondItem="Q7z-W0-SzN" secondAttribute="leading" constant="116" id="dbc-w1-AnS"/>
+                            <constraint firstItem="laC-FL-CRH" firstAttribute="top" secondItem="koI-gg-jng" secondAttribute="bottom" constant="29" id="hcf-Q7-D7R"/>
+                            <constraint firstItem="odw-gK-pTn" firstAttribute="leading" secondItem="Q7z-W0-SzN" secondAttribute="leading" constant="87" id="kpI-xY-b6H"/>
+                            <constraint firstItem="RF5-Ug-88f" firstAttribute="top" secondItem="Q7z-W0-SzN" secondAttribute="top" constant="24" id="obc-Kv-g7U"/>
+                            <constraint firstItem="odw-gK-pTn" firstAttribute="centerX" secondItem="koI-gg-jng" secondAttribute="centerX" id="sIf-T2-Dhi"/>
+                            <constraint firstItem="Qml-zB-KOB" firstAttribute="leading" secondItem="Q7z-W0-SzN" secondAttribute="leading" constant="71" id="utc-lU-akc"/>
+                            <constraint firstItem="Qml-zB-KOB" firstAttribute="top" secondItem="RF5-Ug-88f" secondAttribute="bottom" constant="68" id="y00-Jy-CTs"/>
+                            <constraint firstItem="RF5-Ug-88f" firstAttribute="centerX" secondItem="Qml-zB-KOB" secondAttribute="centerX" id="z8q-2B-V6k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q7z-W0-SzN"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryPicker" destination="koI-gg-jng" id="J9G-8u-Wdg"/>
+                        <outlet property="imdbSlider" destination="odw-gK-pTn" id="qiL-B6-WiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aH-Vz-aaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650.72463768115949" y="39.508928571428569"/>
+        </scene>
         <!--Movies-->
         <scene sceneID="rK0-OJ-rMJ">
             <objects>
-                <tableViewController id="aLC-6t-uXi" customClass="MovieTableViewController" customModule="NetflixBinge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="resultsVC" id="aLC-6t-uXi" customClass="MovieTableViewController" customModule="NetflixBinge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rml-Xb-8rS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

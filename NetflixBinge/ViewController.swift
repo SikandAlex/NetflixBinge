@@ -44,10 +44,8 @@ class ViewController: UIViewController {
         //getTVShows()
         //self.getRuntime(imdbid: "tt10263466")
         
-        Fetcher().fetchShows { [weak self] (shows) in
-            self?.shows = shows
-            
-        }
+        
+        
  
         
         

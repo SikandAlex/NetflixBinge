@@ -12,10 +12,24 @@ import SDWebImage
 class MovieTableViewController: UITableViewController {
     
     private var shows: [Show]?
+    
+    var category = ""
+    var startRating = 0
+    var endRating = 10
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Fetcher().fetchShows { [weak self] (shows) in
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print(category)
+        print("")
+        print("")
+        print("")
+        print("")
+        Fetcher().fetchShows(category: category, startRating: startRating, endRating: endRating) { [weak self] (shows) in
             self?.shows = shows
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
@@ -47,7 +61,7 @@ class MovieTableViewController: UITableViewController {
         cell.posterImageView.layer.cornerRadius = 8
         cell.titleLabel.text = shows?[indexPath.row].title
         cell.synopsisLabel.text = shows?[indexPath.row].synopsis
-        cell.imdbLabel.text = "IMDB ID: " + (shows?[indexPath.row].imdbid)!
+        cell.imdbLabel.text = "IMDB ID: " + ((shows?[indexPath.row].imdbid) ?? "N/A")
         cell.posterImageView.sd_setImage(with: URL(string: (shows?[indexPath.row].imgUrl)!), placeholderImage: UIImage(named: "placeholderImg.png"))
         return cell
     }
