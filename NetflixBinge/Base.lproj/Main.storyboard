@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLC-6t-uXi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetflixBinge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-196" y="39"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="rK0-OJ-rMJ">
+            <objects>
+                <tableViewController id="aLC-6t-uXi" customClass="MovieTableViewController" customModule="NetflixBinge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rml-Xb-8rS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="199" id="Whb-2o-AJt" customClass="MovieCell" customModule="NetflixBinge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="199"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Whb-2o-AJt" id="g2b-es-UJS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parksandrec" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-g0-PvE">
+                                            <rect key="frame" x="20" y="11" width="126" height="177"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="126" id="3OL-nr-0zG"/>
+                                                <constraint firstAttribute="width" secondItem="YPx-g0-PvE" secondAttribute="height" multiplier="42:59" id="IIY-AK-kEt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parks and Rec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTR-Kn-w7O">
+                                            <rect key="frame" x="171" y="11" width="223" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="45J-yo-eKS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDB ID: tt1266020 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLG-XD-Sfx">
+                                            <rect key="frame" x="171" y="40" width="132" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="Ba0-Vk-nkk"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tG-S9-w1G">
+                                            <rect key="frame" x="171" y="69" width="223" height="110"/>
+                                            <mutableString key="text">Leslie Knope, a mid-level bureaucrat in an Indiana Parks and Recreation Department, hopes to beautify her town (and boost her own career) by helping local nurse Ann Perkins turn an abandoned construction site into a community park. However, what should be a fairly simple project is stymied at every turn by oafish bureaucrats, selfish neighbors, governmental red tape, and a myriad of other challenges. Leslie's colleague Tom Haverford, who delights in exploiting his position for personal gain, is as likely to undermine her efforts as to help her, while her boss, Ron Swanson, is adamantly opposed to government in any form, even though he's a bureaucrat.</mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YPx-g0-PvE" firstAttribute="bottom" secondItem="g2b-es-UJS" secondAttribute="bottomMargin" id="2Hf-Jt-mWr"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="8tG-S9-w1G" secondAttribute="bottom" constant="9" id="5Mw-jC-OVU"/>
+                                        <constraint firstItem="YPx-g0-PvE" firstAttribute="leading" secondItem="g2b-es-UJS" secondAttribute="leadingMargin" id="8eX-yP-BaD"/>
+                                        <constraint firstItem="YPx-g0-PvE" firstAttribute="top" secondItem="PTR-Kn-w7O" secondAttribute="top" id="ATq-1e-oP8"/>
+                                        <constraint firstItem="YPx-g0-PvE" firstAttribute="top" secondItem="g2b-es-UJS" secondAttribute="topMargin" id="ED3-pa-Lme"/>
+                                        <constraint firstItem="8tG-S9-w1G" firstAttribute="top" secondItem="gLG-XD-Sfx" secondAttribute="bottom" constant="12" id="HPf-79-TW6"/>
+                                        <constraint firstItem="gLG-XD-Sfx" firstAttribute="top" secondItem="PTR-Kn-w7O" secondAttribute="bottom" constant="8" id="Ixs-Pw-ToK"/>
+                                        <constraint firstItem="PTR-Kn-w7O" firstAttribute="leading" secondItem="gLG-XD-Sfx" secondAttribute="leading" id="bHb-uA-kFi"/>
+                                        <constraint firstItem="PTR-Kn-w7O" firstAttribute="trailing" secondItem="g2b-es-UJS" secondAttribute="trailingMargin" id="cFe-hp-Cxi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gLG-XD-Sfx" secondAttribute="trailing" constant="91" id="wL6-hk-Shr"/>
+                                        <constraint firstItem="PTR-Kn-w7O" firstAttribute="leading" secondItem="YPx-g0-PvE" secondAttribute="trailing" constant="25" id="xq6-Gp-07F"/>
+                                        <constraint firstItem="PTR-Kn-w7O" firstAttribute="trailing" secondItem="8tG-S9-w1G" secondAttribute="trailing" id="y9c-6v-zmB"/>
+                                        <constraint firstItem="gLG-XD-Sfx" firstAttribute="leading" secondItem="8tG-S9-w1G" secondAttribute="leading" id="zwd-yS-xLv"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imdbLabel" destination="gLG-XD-Sfx" id="H49-LH-qDU"/>
+                                    <outlet property="posterImageView" destination="YPx-g0-PvE" id="vsX-kY-t6T"/>
+                                    <outlet property="synopsisLabel" destination="8tG-S9-w1G" id="RhW-nl-Rqu"/>
+                                    <outlet property="titleLabel" destination="PTR-Kn-w7O" id="prN-kA-hff"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aLC-6t-uXi" id="EB8-cb-JWU"/>
+                            <outlet property="delegate" destination="aLC-6t-uXi" id="cgM-7e-xkm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Movies" largeTitleDisplayMode="always" id="zRw-Xz-OIp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Amp-Ez-ESt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607.2463768115942" y="38.839285714285715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="parksandrec" width="182" height="268"/>
+    </resources>
 </document>
