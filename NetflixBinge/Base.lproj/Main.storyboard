@@ -131,8 +131,8 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parksandrec" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-g0-PvE">
                                             <rect key="frame" x="20" y="11" width="126" height="177"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="126" id="3OL-nr-0zG"/>
                                                 <constraint firstAttribute="width" secondItem="YPx-g0-PvE" secondAttribute="height" multiplier="42:59" id="IIY-AK-kEt"/>
+                                                <constraint firstAttribute="width" constant="126" id="u2a-2A-qXg"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parks and Rec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTR-Kn-w7O">
@@ -145,7 +145,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDB ID: tt1266020 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLG-XD-Sfx">
-                                            <rect key="frame" x="171" y="40" width="132" height="17"/>
+                                            <rect key="frame" x="171" y="40" width="223" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="Ba0-Vk-nkk"/>
                                             </constraints>
@@ -155,7 +155,7 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tG-S9-w1G">
                                             <rect key="frame" x="171" y="69" width="223" height="110"/>
-                                            <mutableString key="text">Leslie Knope, a mid-level bureaucrat in an Indiana Parks and Recreation Department, hopes to beautify her town (and boost her own career) by helping local nurse Ann Perkins turn an abandoned construction site into a community park. However, what should be a fairly simple project is stymied at every turn by oafish bureaucrats, selfish neighbors, governmental red tape, and a myriad of other challenges. Leslie's colleague Tom Haverford, who delights in exploiting his position for personal gain, is as likely to undermine her efforts as to help her, while her boss, Ron Swanson, is adamantly opposed to government in any form, even though he's a bureaucrat.</mutableString>
+                                            <string key="text">Leslie Knope, a mid-level bureaucrat in an Indiana Parks and Recreation Department, hopes to beautify her town (and boost her own career) by helping local nurse Ann Perkins turn an abandoned construction site into a community park. However, what should be a fairly simple project is stymied at every turn by oafish bureaucrats, selfish neighbors, governmental red tape, and a myriad of other challenges. Leslie's colleague Tom Haverford, who delights in exploiting his position for personal gain, is as likely to undermine her efforts as to help her, while her boss, Ron Swanson, is adamantly opposed to government in any form, even though he's a bureaucrat.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -171,7 +171,7 @@
                                         <constraint firstItem="gLG-XD-Sfx" firstAttribute="top" secondItem="PTR-Kn-w7O" secondAttribute="bottom" constant="8" id="Ixs-Pw-ToK"/>
                                         <constraint firstItem="PTR-Kn-w7O" firstAttribute="leading" secondItem="gLG-XD-Sfx" secondAttribute="leading" id="bHb-uA-kFi"/>
                                         <constraint firstItem="PTR-Kn-w7O" firstAttribute="trailing" secondItem="g2b-es-UJS" secondAttribute="trailingMargin" id="cFe-hp-Cxi"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="gLG-XD-Sfx" secondAttribute="trailing" constant="91" id="wL6-hk-Shr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gLG-XD-Sfx" secondAttribute="trailing" id="wL6-hk-Shr"/>
                                         <constraint firstItem="PTR-Kn-w7O" firstAttribute="leading" secondItem="YPx-g0-PvE" secondAttribute="trailing" constant="25" id="xq6-Gp-07F"/>
                                         <constraint firstItem="PTR-Kn-w7O" firstAttribute="trailing" secondItem="8tG-S9-w1G" secondAttribute="trailing" id="y9c-6v-zmB"/>
                                         <constraint firstItem="gLG-XD-Sfx" firstAttribute="leading" secondItem="8tG-S9-w1G" secondAttribute="leading" id="zwd-yS-xLv"/>
@@ -195,6 +195,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Amp-Ez-ESt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1607.2463768115942" y="38.839285714285715"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="fra-Ig-P24">
+            <objects>
+                <viewController storyboardIdentifier="detailsVC" id="1zr-rb-gSn" customClass="DetailViewController" customModule="NetflixBinge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m5Q-dm-pPT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parksandrec" translatesAutoresizingMaskIntoConstraints="NO" id="XR4-OP-5NI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binge Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqe-WW-bAB">
+                                <rect key="frame" x="126" y="315" width="162" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Ezf-QD-ZJU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Day 1 Hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obO-Z3-1xh">
+                                <rect key="frame" x="133" y="362" width="151" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="mjs-VR-5Nm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XR4-OP-5NI" firstAttribute="centerX" secondItem="m5Q-dm-pPT" secondAttribute="centerX" id="3i4-vw-HnP"/>
+                            <constraint firstItem="obO-Z3-1xh" firstAttribute="centerX" secondItem="3OT-Gu-dkG" secondAttribute="centerX" constant="1.5" id="Hft-DO-Q5u"/>
+                            <constraint firstItem="Fqe-WW-bAB" firstAttribute="top" secondItem="XR4-OP-5NI" secondAttribute="bottom" constant="21" id="QRF-UZ-Lhe"/>
+                            <constraint firstItem="obO-Z3-1xh" firstAttribute="top" secondItem="Fqe-WW-bAB" secondAttribute="bottom" constant="8" id="UIs-hG-nv1"/>
+                            <constraint firstItem="3OT-Gu-dkG" firstAttribute="bottom" secondItem="obO-Z3-1xh" secondAttribute="bottom" constant="466" id="a6o-ng-9a3"/>
+                            <constraint firstItem="XR4-OP-5NI" firstAttribute="leading" secondItem="3OT-Gu-dkG" secondAttribute="leading" id="cFV-oG-3hy"/>
+                            <constraint firstItem="Fqe-WW-bAB" firstAttribute="centerX" secondItem="3OT-Gu-dkG" secondAttribute="centerX" id="dn5-Fb-R9J"/>
+                            <constraint firstItem="XR4-OP-5NI" firstAttribute="top" secondItem="m5Q-dm-pPT" secondAttribute="topMargin" constant="-44" id="eHL-ld-PBE"/>
+                            <constraint firstItem="Fqe-WW-bAB" firstAttribute="centerX" secondItem="obO-Z3-1xh" secondAttribute="centerX" constant="-1.5" id="ivi-3s-skb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3OT-Gu-dkG"/>
+                    </view>
+                    <connections>
+                        <outlet property="bingeTimeLabel" destination="obO-Z3-1xh" id="Vle-po-YeU"/>
+                        <outlet property="detailImageView" destination="XR4-OP-5NI" id="ONh-Bu-dr7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0Z-JD-RMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442.0289855072465" y="39.508928571428569"/>
         </scene>
     </scenes>
     <resources>

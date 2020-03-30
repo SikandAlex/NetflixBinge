@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05CEBDBCB9B12E93541DB761 /* Pods_NetflixBinge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EA1BEFEE65401D7B7443E4 /* Pods_NetflixBinge.framework */; };
+		FAA887642431FEE200B83743 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887632431FEE200B83743 /* DetailViewController.swift */; };
 		FAB43B57242D0441007B8F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B56242D0441007B8F50 /* AppDelegate.swift */; };
 		FAB43B59242D0441007B8F50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B58242D0441007B8F50 /* SceneDelegate.swift */; };
 		FAB43B5B242D0441007B8F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B5A242D0441007B8F50 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		238CAB7B8BC219FDC82C6330 /* Pods-NetflixBinge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixBinge.debug.xcconfig"; path = "Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge.debug.xcconfig"; sourceTree = "<group>"; };
 		69EA1BEFEE65401D7B7443E4 /* Pods_NetflixBinge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflixBinge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1A63450DF9BFCD95C309B1 /* Pods-NetflixBinge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixBinge.release.xcconfig"; path = "Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge.release.xcconfig"; sourceTree = "<group>"; };
+		FAA887632431FEE200B83743 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FAB43B53242D0441007B8F50 /* NetflixBinge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixBinge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB43B56242D0441007B8F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB43B58242D0441007B8F50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				FAB43B94242DE857007B8F50 /* ParametersViewController.swift */,
 				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
 				FAB43B5C242D0441007B8F50 /* Main.storyboard */,
+				FAA887632431FEE200B83743 /* DetailViewController.swift */,
 				FAB43B90242DD31E007B8F50 /* MovieCell.swift */,
 				FAB43B5F242D0442007B8F50 /* Assets.xcassets */,
 				FAB43B61242D0442007B8F50 /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA887642431FEE200B83743 /* DetailViewController.swift in Sources */,
 				FAB43B6B242D7380007B8F50 /* Fetcher.swift in Sources */,
 				FAB43B6D242D73E7007B8F50 /* Responses.swift in Sources */,
 				FAB43B91242DD31E007B8F50 /* MovieCell.swift in Sources */,

@@ -12,6 +12,19 @@ import Foundation
 final class Fetcher {
 
   var shows: [Show] = []
+    
+   
+    var api_key = "f8ae9a386c3c783ce0bd4eb3bfe9862b"
+    
+    var tmdb_url = "https://api.themoviedb.org/3"
+    
+    var search_endpt = "/search"
+    
+    var movie_suggestions = "/movie?"
+    var show_suggestions = "/tv?"
+    
+    var movie_id_query = "/movie/"
+    var show_id_query = "/tv/"
   
   
     func fetchShows(category: String, startRating: Int, endRating: Int, completionHandler: @escaping ([Show]) -> Void) {
@@ -22,13 +35,7 @@ final class Fetcher {
         else if category == "TV Shows" {
             cat = "series"
         }
-        print(cat)
         let domainUrlString = "https://unogsng.p.rapidapi.com/search?type=" + cat + "&start_rating=" + String(startRating) + "&end_rating=" + String(endRating)
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
         print(domainUrlString)
     let url = URL(string: domainUrlString)!
     let session = URLSession.shared
@@ -60,6 +67,60 @@ final class Fetcher {
     })
     task.resume()
   }
+    
+    func convertId(imdbId: String, completionHandler: @escaping (Int) -> Int?)  {
+        //var mreq_url = tmdb_url + "/find" + show_id_query + String(show_id) + "?api_key=" + api_key
+        var mreq_url = tmdb_url + "/find/" + imdbId + "?api_key=" + api_key + "&external_source=imdb_id"
+        let session = URLSession.shared
+        guard let url = URL(string: mreq_url) else {return}
+        let task = session.dataTask(with: url) { (data, response, error) in
+        guard let dataResponse = data,
+                  error == nil else {
+                  print(error?.localizedDescription ?? "Response Error")
+                  return }
+            do{
+                //here dataResponse received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                    dataResponse, options: []) as! [String: Any]
+                let results = jsonResponse["tv_results"] as! [[String: Any]]
+                let id = results[0]["id"] as! Int
+                completionHandler(id)
+             } catch let parsingError {
+                print("Error", parsingError)
+           }
+            
+        }
+        task.resume()
+    }
+    
+    func getRuntime(tmdbId: Int, completionHandler: @escaping (Int) -> String?) {
+        var mreq_url = tmdb_url + show_id_query + String(tmdbId) + "?api_key=" + api_key
+        let session = URLSession.shared
+        guard let url = URL(string: mreq_url) else {return}
+        let task = session.dataTask(with: url) { (data, response, error) in
+        guard let dataResponse = data,
+                  error == nil else {
+                  print(error?.localizedDescription ?? "Response Error")
+                  return }
+            do{
+                //here dataResponse received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                    dataResponse, options: []) as! [String: Any]
+                let numEpisodes = jsonResponse["number_of_episodes"] as! Int
+                let episodeRuntime = jsonResponse["episode_run_time"] as! [Int]
+                let sumRuntime = episodeRuntime.reduce(0, +)
+                completionHandler(sumRuntime * numEpisodes)
+                //completionHandler(id)
+             } catch let parsingError {
+                print("Error", parsingError)
+           }
+            
+        }
+        task.resume()
+    }
+    
 
+    
+    
 }
  

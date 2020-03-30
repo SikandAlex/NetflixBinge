@@ -19,28 +19,14 @@ class MovieTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        print(category)
-        print("")
-        print("")
-        print("")
-        print("")
         Fetcher().fetchShows(category: category, startRating: startRating, endRating: endRating) { [weak self] (shows) in
             self?.shows = shows
+            print(shows)
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
+            
         }
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -66,7 +52,33 @@ class MovieTableViewController: UITableViewController {
         return cell
     }
     
-
-   
-
+    func minutesToDaysHours(minutes : Int) -> (Int, Int) {
+      return (minutes / (60*24), (minutes % (60*24)) / 60)
+    }
+    
+    func getBingeTimeString(minutes:Int) -> String {
+        let (d, h) = minutesToDaysHours(minutes: minutes)
+        var resStr = String(d) + " Days, " + String(h) + " Hours"
+        resStr = resStr.replacingOccurrences(of: "0 Days, ", with: "")
+        return resStr
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "detailsVC") as! DetailViewController
+        controller.imgUrl = shows?[indexPath.row].imgUrl ?? ""
+        
+        //controller.bingeTimeLabel.text =
+        Fetcher().convertId(imdbId: (shows?[indexPath.row].imdbid)!) { [weak self] (id) in
+                Fetcher().getRuntime(tmdbId: id) {
+                    [weak self] (runtime) in
+                    DispatchQueue.main.async {
+                        controller.bingeTimeLabel.text = self?.getBingeTimeString(minutes: runtime)
+                    }
+                    return self?.getBingeTimeString(minutes: runtime)
+                }
+                return id
+            }
+        self.present(controller, animated: true)
+    }
 }
