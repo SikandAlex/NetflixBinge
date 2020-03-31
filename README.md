@@ -15,16 +15,24 @@ Build and run the app on the iOS simulator or connect your iPhone and install di
 
 ## APIs and External Libraries
 Unofficial Netflix Global Search API [https://rapidapi.com/unogs/api/unogs](https://rapidapi.com/unogs/api/unogs)
+
 The Movie Database API [https://developers.themoviedb.org/3](https://developers.themoviedb.org/3)
+
 SwiftSoup [https://github.com/scinfu/SwiftSoup](https://github.com/scinfu/SwiftSoup)
+
 SDWebImage [https://github.com/SDWebImage/SDWebImage](https://github.com/SDWebImage/SDWebImage)
 
 ## Breakdown
 
 **Fetcher.swift** contains the networking code that talks to the various APIs
+
 **Responses.swift** contains the structs responsible for decoding the JSON response from the API to native Swift objects
+
 **MovieCell.swift** defines the row/cells for the TableView
+
 **MovieTableViewController.swift** contains the code for setting up the main view and registering the cells to the table view, conforms to UITableViewDelegate and UITableViewDatasource protocols
+
+**DetailViewController.swift** contains the code for setting up the detail view
 
 ## Meta
 
