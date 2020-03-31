@@ -26,6 +26,10 @@ SwiftSoup [https://github.com/scinfu/SwiftSoup](https://github.com/scinfu/SwiftS
 
 SDWebImage [https://github.com/SDWebImage/SDWebImage](https://github.com/SDWebImage/SDWebImage)
 
+LGButton [https://github.com/loregr/LGButton](https://github.com/loregr/LGButton)
+
+Dribble Inspiration [https://dribbble.com/shots/9017531-Movie-app-collection/attachments/1141603?mode=media](https://dribbble.com/shots/9017531-Movie-app-collection/attachments/1141603?mode=media)
+
 ## Breakdown
 
 **Fetcher.swift** contains the networking code that talks to the various APIs
