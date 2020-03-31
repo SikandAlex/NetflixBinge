@@ -10,7 +10,6 @@
 		05CEBDBCB9B12E93541DB761 /* Pods_NetflixBinge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EA1BEFEE65401D7B7443E4 /* Pods_NetflixBinge.framework */; };
 		FA18C8E02432FD5000A5FA54 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */; };
 		FAA887642431FEE200B83743 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887632431FEE200B83743 /* DetailViewController.swift */; };
-		FAA8876A243244A900B83743 /* mavenpro-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88766243244A900B83743 /* mavenpro-regular.ttf */; };
 		FAA8877024324B5300B83743 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8876F24324B5300B83743 /* ListViewController.swift */; };
 		FAA887722432C03C00B83743 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887712432C03C00B83743 /* BaseViewController.swift */; };
 		FAB43B57242D0441007B8F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B56242D0441007B8F50 /* AppDelegate.swift */; };
@@ -31,7 +30,6 @@
 		EB1A63450DF9BFCD95C309B1 /* Pods-NetflixBinge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixBinge.release.xcconfig"; path = "Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge.release.xcconfig"; sourceTree = "<group>"; };
 		FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAA887632431FEE200B83743 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FAA88766243244A900B83743 /* mavenpro-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-regular.ttf"; sourceTree = "<group>"; };
 		FAA8876F24324B5300B83743 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FAA887712432C03C00B83743 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FAA887762432DAB700B83743 /* YoshikoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */,
 				FAB43B6A242D7380007B8F50 /* Fetcher.swift */,
 				FAA887752432DAB700B83743 /* TextFieldEffects */,
-				FAA88766243244A900B83743 /* mavenpro-regular.ttf */,
 				FAB43B94242DE857007B8F50 /* ParametersViewController.swift */,
 				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
 				FAB43B5C242D0441007B8F50 /* Main.storyboard */,
@@ -214,7 +211,6 @@
 			files = (
 				FAB43B63242D0442007B8F50 /* LaunchScreen.storyboard in Resources */,
 				FAB43B60242D0442007B8F50 /* Assets.xcassets in Resources */,
-				FAA8876A243244A900B83743 /* mavenpro-regular.ttf in Resources */,
 				FAB43B5E242D0441007B8F50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
