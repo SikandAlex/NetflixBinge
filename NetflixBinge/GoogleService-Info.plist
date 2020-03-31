@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>946986530604-q21roe9mfsgc0k7an1fsl6kikseb5q1d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.946986530604-q21roe9mfsgc0k7an1fsl6kikseb5q1d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDQT3YJZglnbB7Rt4TqczHIaaVug4ddbmk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>946986530604</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.CS411.NetflixBinge</string>
+	<key>PROJECT_ID</key>
+	<string>bingeflix-ce0d1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bingeflix-ce0d1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:946986530604:ios:f8d683ab3f03e93fed5e89</string>
+	<key>DATABASE_URL</key>
+	<string>https://bingeflix-ce0d1.firebaseio.com</string>
+</dict>
+</plist>

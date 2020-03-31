@@ -16,29 +16,35 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.946986530604-q21roe9mfsgc0k7an1fsl6kikseb5q1d</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UIApplicationSceneManifest</key>
+	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
-			</array>
-		</dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>mavenpro-black.ttf</string>
+		<string>mavenpro-bold.ttf</string>
+		<string>mavenpro-regular.ttf</string>
+		<string>mavenpro-medium.ttf</string>
+	</array>
+	<key>UIApplicationSupportsMultipleScenes</key>
+	<false/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -47,6 +53,20 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UISceneConfigurations</key>
+	<dict>
+		<key>UIWindowSceneSessionRoleApplication</key>
+		<array>
+			<dict>
+				<key>UISceneConfigurationName</key>
+				<string>Default Configuration</string>
+				<key>UISceneDelegateClassName</key>
+				<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				<key>UISceneStoryboardFile</key>
+				<string>Main</string>
+			</dict>
+		</array>
+	</dict>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

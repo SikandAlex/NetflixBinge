@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		05CEBDBCB9B12E93541DB761 /* Pods_NetflixBinge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EA1BEFEE65401D7B7443E4 /* Pods_NetflixBinge.framework */; };
+		FA18C8E02432FD5000A5FA54 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */; };
 		FAA887642431FEE200B83743 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887632431FEE200B83743 /* DetailViewController.swift */; };
+		FAA88769243244A900B83743 /* mavenpro-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88765243244A800B83743 /* mavenpro-black.ttf */; };
+		FAA8876A243244A900B83743 /* mavenpro-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88766243244A900B83743 /* mavenpro-regular.ttf */; };
+		FAA8876B243244A900B83743 /* mavenpro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88767243244A900B83743 /* mavenpro-bold.ttf */; };
+		FAA8876C243244A900B83743 /* mavenpro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88768243244A900B83743 /* mavenpro-medium.ttf */; };
+		FAA8877024324B5300B83743 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8876F24324B5300B83743 /* ListViewController.swift */; };
+		FAA887722432C03C00B83743 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887712432C03C00B83743 /* BaseViewController.swift */; };
+		FAA887922432FAC400B83743 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAA887912432FAC400B83743 /* GoogleService-Info.plist */; };
 		FAB43B57242D0441007B8F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B56242D0441007B8F50 /* AppDelegate.swift */; };
-		FAB43B59242D0441007B8F50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B58242D0441007B8F50 /* SceneDelegate.swift */; };
 		FAB43B5B242D0441007B8F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B5A242D0441007B8F50 /* ViewController.swift */; };
 		FAB43B5E242D0441007B8F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB43B5C242D0441007B8F50 /* Main.storyboard */; };
 		FAB43B60242D0442007B8F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB43B5F242D0442007B8F50 /* Assets.xcassets */; };
@@ -26,10 +33,41 @@
 		238CAB7B8BC219FDC82C6330 /* Pods-NetflixBinge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixBinge.debug.xcconfig"; path = "Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge.debug.xcconfig"; sourceTree = "<group>"; };
 		69EA1BEFEE65401D7B7443E4 /* Pods_NetflixBinge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflixBinge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1A63450DF9BFCD95C309B1 /* Pods-NetflixBinge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixBinge.release.xcconfig"; path = "Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge.release.xcconfig"; sourceTree = "<group>"; };
+		FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAA887632431FEE200B83743 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAA88765243244A800B83743 /* mavenpro-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-black.ttf"; sourceTree = "<group>"; };
+		FAA88766243244A900B83743 /* mavenpro-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-regular.ttf"; sourceTree = "<group>"; };
+		FAA88767243244A900B83743 /* mavenpro-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-bold.ttf"; sourceTree = "<group>"; };
+		FAA88768243244A900B83743 /* mavenpro-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-medium.ttf"; sourceTree = "<group>"; };
+		FAA8876F24324B5300B83743 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FAA887712432C03C00B83743 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FAA887762432DAB700B83743 /* YoshikoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		FAA887772432DAB700B83743 /* TextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		FAA887782432DAB700B83743 /* HoshiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		FAA887792432DAB700B83743 /* MinoruTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		FAA8877A2432DAB700B83743 /* YokoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		FAA8877B2432DAB700B83743 /* TextFieldEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		FAA8877C2432DAB700B83743 /* JiroTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		FAA8877D2432DAB700B83743 /* MadokaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		FAA8877E2432DAB700B83743 /* KaedeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		FAA8877F2432DAB700B83743 /* AkiraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		FAA887802432DAB700B83743 /* IsaoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		FAA887812432DAB700B83743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA887832432DABB00B83743 /* YoshikoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		FAA887842432DABB00B83743 /* TextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		FAA887852432DABB00B83743 /* HoshiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		FAA887862432DABB00B83743 /* MinoruTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		FAA887872432DABB00B83743 /* YokoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		FAA887882432DABB00B83743 /* TextFieldEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		FAA887892432DABB00B83743 /* JiroTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		FAA8878A2432DABB00B83743 /* MadokaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		FAA8878B2432DABB00B83743 /* KaedeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		FAA8878C2432DABB00B83743 /* AkiraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		FAA8878D2432DABB00B83743 /* IsaoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		FAA8878E2432DABB00B83743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA887912432FAC400B83743 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAB43B53242D0441007B8F50 /* NetflixBinge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixBinge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB43B56242D0441007B8F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAB43B58242D0441007B8F50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAB43B5A242D0441007B8F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAB43B5D242D0441007B8F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB43B5F242D0442007B8F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,9 +109,50 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FAA887752432DAB700B83743 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				FAA887762432DAB700B83743 /* YoshikoTextField.swift */,
+				FAA887772432DAB700B83743 /* TextFieldEffects.h */,
+				FAA887782432DAB700B83743 /* HoshiTextField.swift */,
+				FAA887792432DAB700B83743 /* MinoruTextField.swift */,
+				FAA8877A2432DAB700B83743 /* YokoTextField.swift */,
+				FAA8877B2432DAB700B83743 /* TextFieldEffects.swift */,
+				FAA8877C2432DAB700B83743 /* JiroTextField.swift */,
+				FAA8877D2432DAB700B83743 /* MadokaTextField.swift */,
+				FAA8877E2432DAB700B83743 /* KaedeTextField.swift */,
+				FAA8877F2432DAB700B83743 /* AkiraTextField.swift */,
+				FAA887802432DAB700B83743 /* IsaoTextField.swift */,
+				FAA887812432DAB700B83743 /* Info.plist */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects/TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		FAA887822432DABB00B83743 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				FAA887832432DABB00B83743 /* YoshikoTextField.swift */,
+				FAA887842432DABB00B83743 /* TextFieldEffects.h */,
+				FAA887852432DABB00B83743 /* HoshiTextField.swift */,
+				FAA887862432DABB00B83743 /* MinoruTextField.swift */,
+				FAA887872432DABB00B83743 /* YokoTextField.swift */,
+				FAA887882432DABB00B83743 /* TextFieldEffects.swift */,
+				FAA887892432DABB00B83743 /* JiroTextField.swift */,
+				FAA8878A2432DABB00B83743 /* MadokaTextField.swift */,
+				FAA8878B2432DABB00B83743 /* KaedeTextField.swift */,
+				FAA8878C2432DABB00B83743 /* AkiraTextField.swift */,
+				FAA8878D2432DABB00B83743 /* IsaoTextField.swift */,
+				FAA8878E2432DABB00B83743 /* Info.plist */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects/TextFieldEffects;
+			sourceTree = "<group>";
+		};
 		FAB43B4A242D0441007B8F50 = {
 			isa = PBXGroup;
 			children = (
+				FAA887712432C03C00B83743 /* BaseViewController.swift */,
 				FAB43B55242D0441007B8F50 /* NetflixBinge */,
 				FAB43B54242D0441007B8F50 /* Products */,
 				C7805FEE2E64F31EF52D0AFE /* Pods */,
@@ -93,13 +172,21 @@
 			isa = PBXGroup;
 			children = (
 				FAB43B56242D0441007B8F50 /* AppDelegate.swift */,
-				FAB43B58242D0441007B8F50 /* SceneDelegate.swift */,
 				FAB43B5A242D0441007B8F50 /* ViewController.swift */,
 				FAB43B92242DD3D8007B8F50 /* MovieTableViewController.swift */,
+				FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */,
 				FAB43B6A242D7380007B8F50 /* Fetcher.swift */,
+				FAA88765243244A800B83743 /* mavenpro-black.ttf */,
+				FAA88767243244A900B83743 /* mavenpro-bold.ttf */,
+				FAA88768243244A900B83743 /* mavenpro-medium.ttf */,
+				FAA887752432DAB700B83743 /* TextFieldEffects */,
+				FAA887822432DABB00B83743 /* TextFieldEffects */,
+				FAA88766243244A900B83743 /* mavenpro-regular.ttf */,
 				FAB43B94242DE857007B8F50 /* ParametersViewController.swift */,
 				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
+				FAA887912432FAC400B83743 /* GoogleService-Info.plist */,
 				FAB43B5C242D0441007B8F50 /* Main.storyboard */,
+				FAA8876F24324B5300B83743 /* ListViewController.swift */,
 				FAA887632431FEE200B83743 /* DetailViewController.swift */,
 				FAB43B90242DD31E007B8F50 /* MovieCell.swift */,
 				FAB43B5F242D0442007B8F50 /* Assets.xcassets */,
@@ -121,6 +208,7 @@
 				FAB43B50242D0441007B8F50 /* Frameworks */,
 				FAB43B51242D0441007B8F50 /* Resources */,
 				A5F6A2C9DFF0C8CB21910A20 /* [CP] Embed Pods Frameworks */,
+				485BF0E5F40FB6FB98613897 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,8 +257,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA88769243244A900B83743 /* mavenpro-black.ttf in Resources */,
+				FAA887922432FAC400B83743 /* GoogleService-Info.plist in Resources */,
+				FAA8876B243244A900B83743 /* mavenpro-bold.ttf in Resources */,
+				FAA8876C243244A900B83743 /* mavenpro-medium.ttf in Resources */,
 				FAB43B63242D0442007B8F50 /* LaunchScreen.storyboard in Resources */,
 				FAB43B60242D0442007B8F50 /* Assets.xcassets in Resources */,
+				FAA8876A243244A900B83743 /* mavenpro-regular.ttf in Resources */,
 				FAB43B5E242D0441007B8F50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +271,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		485BF0E5F40FB6FB98613897 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B63238CD5E122B370464EFE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,14 +334,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA18C8E02432FD5000A5FA54 /* LoginViewController.swift in Sources */,
 				FAA887642431FEE200B83743 /* DetailViewController.swift in Sources */,
 				FAB43B6B242D7380007B8F50 /* Fetcher.swift in Sources */,
+				FAA887722432C03C00B83743 /* BaseViewController.swift in Sources */,
 				FAB43B6D242D73E7007B8F50 /* Responses.swift in Sources */,
 				FAB43B91242DD31E007B8F50 /* MovieCell.swift in Sources */,
 				FAB43B5B242D0441007B8F50 /* ViewController.swift in Sources */,
 				FAB43B95242DE857007B8F50 /* ParametersViewController.swift in Sources */,
 				FAB43B57242D0441007B8F50 /* AppDelegate.swift in Sources */,
-				FAB43B59242D0441007B8F50 /* SceneDelegate.swift in Sources */,
+				FAA8877024324B5300B83743 /* ListViewController.swift in Sources */,
 				FAB43B93242DD3D8007B8F50 /* MovieTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,11 +24,15 @@ struct Show: Codable {
     let synopsis: String?
     let imdbid: String?
     let imgUrl: String?
+    let avgRating: Float?
+    let year: Int?
     
     enum CodingKeys: String, CodingKey {
         case title
         case synopsis
         case imdbid
         case imgUrl = "img"
+        case avgRating = "avgrating"
+        case year
     }
 }

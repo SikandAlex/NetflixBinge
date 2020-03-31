@@ -35,7 +35,7 @@ final class Fetcher {
         else if category == "TV Shows" {
             cat = "series"
         }
-        let domainUrlString = "https://unogsng.p.rapidapi.com/search?type=" + cat + "&start_rating=" + String(startRating) + "&end_rating=" + String(endRating)
+        let domainUrlString = "https://unogsng.p.rapidapi.com/search?type=" + cat + "&orderby=date"
         print(domainUrlString)
     let url = URL(string: domainUrlString)!
     let session = URLSession.shared
@@ -93,7 +93,7 @@ final class Fetcher {
         task.resume()
     }
     
-    func getRuntime(tmdbId: Int, completionHandler: @escaping (Int) -> String?) {
+    func getRuntime(tmdbId: Int, completionHandler: @escaping (Int, Int) -> (String)?) {
         var mreq_url = tmdb_url + show_id_query + String(tmdbId) + "?api_key=" + api_key
         let session = URLSession.shared
         guard let url = URL(string: mreq_url) else {return}
@@ -109,7 +109,8 @@ final class Fetcher {
                 let numEpisodes = jsonResponse["number_of_episodes"] as! Int
                 let episodeRuntime = jsonResponse["episode_run_time"] as! [Int]
                 let sumRuntime = episodeRuntime.reduce(0, +)
-                completionHandler(sumRuntime * numEpisodes)
+                let numSeasons = jsonResponse["number_of_seasons"] as! Int
+                completionHandler(sumRuntime * numEpisodes, numSeasons)
                 //completionHandler(id)
              } catch let parsingError {
                 print("Error", parsingError)
