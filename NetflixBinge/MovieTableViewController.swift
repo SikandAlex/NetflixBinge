@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 import FirebaseAuth
+import Hero
 
 class MovieTableViewController: UITableViewController {
     
@@ -32,6 +33,7 @@ class MovieTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.isHeroEnabled = true
         self.view.backgroundColor = UIColor.black
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Saved Shows", style: .plain, target: self, action: nil)
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action: #selector(signOut))
@@ -141,6 +143,46 @@ class MovieTableViewController: UITableViewController {
                 }
                 return id
             }
-        self.present(controller, animated: true)
+        
+        //for mC in self.tableView.visibleCells {
+       //     let movieCell = mC
+      //      movieCell.heroID = ""
+     //   }
+        let mc = self.tableView.cellForRow(at: indexPath) as! MovieCell
+       // let rand: String = randomString(length: 4)
+      //  print(rand)
+        
+       
+        mc.posterImageView.heroID = "img" + String(indexPath.row)
+        
+        mc.synopsisLabel.heroID = "synop" + String(indexPath.row)
+       
+        
+        mc.titleLabel.heroID = "title" + String(indexPath.row)
+        
+        
+        mc.ratingLabel.heroID = "rating" + String(indexPath.row)
+        mc.cellContainerView.heroID = "background" + String(indexPath.row)
+       
+        
+        //mc.synopsisLabel.heroID = "synop" + String(indexPath.row)
+        //controller.synopsisLabel.heroID = "synop" + String(indexPath.row)
+        
+        
+        controller.isHeroEnabled = true
+        controller.imgHeroId = "img" + String(indexPath.row)
+        controller.synopHeroId = "synop" + String(indexPath.row)
+        controller.titleHeroId = "title" + String(indexPath.row)
+        controller.ratingHeroId = "rating" + String(indexPath.row)
+        controller.backgroundHeroId = "background" + String(indexPath.row)
+        
+        //controller.modalPresentationStyle = .formSheet
+        self.navigationController?.pushViewController(controller, animated: true)
+        //self.present(controller, animated: true)
+    }
+    
+    func randomString(length: Int) -> String {
+      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+      return String((0..<length).map{ _ in letters.randomElement()! })
     }
 }

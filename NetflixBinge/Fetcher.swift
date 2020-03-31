@@ -41,7 +41,7 @@ final class Fetcher {
     let session = URLSession.shared
     var request = URLRequest(url: url)
     request.addValue("unogsng.p.rapidapi.com", forHTTPHeaderField: "x-rapidapi-host")
-    request.addValue("cb1bb20187msha88ad05fac42946p199f13jsne675ffd85911", forHTTPHeaderField: "x-rapidapi-key")
+    request.addValue("", forHTTPHeaderField: "x-rapidapi-key")
     request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
 
     let task = session.dataTask(with: request, completionHandler: { (data, response, error) in

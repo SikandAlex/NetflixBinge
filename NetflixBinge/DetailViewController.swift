@@ -20,23 +20,33 @@ class DetailViewController: UIViewController {
     var titleText = ""
     var synopsis = ""
     var rating = ""
-    
+    var imgHeroId = ""
+    var synopHeroId = ""
+    var titleHeroId = ""
+    var ratingHeroId = ""
+    var backgroundHeroId = ""
     
     var imgUrl: String = ""
-    @IBOutlet weak var detailImageView: UIImageViewAligned!
+   
+    @IBOutlet weak var detailImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titleText = titleText.replacingOccurrences(of: "&#39;", with: "'")
         synopsis = synopsis.replacingOccurrences(of: "&#39;", with: "'")
         self.detailImageView.contentMode = .scaleAspectFill
-        self.detailImageView.alignBottom = true
+       
             self.detailImageView.sd_setImage(with: URL(string: imgUrl), placeholderImage: UIImage(named: "placeholderImg.png"))
         self.synopsisLabel.sizeToFit()
         self.detailImageView.layer.cornerRadius = 8
         self.titleLabel.text = titleText
         self.synopsisLabel.text = synopsis
         self.ratingLabel.text = rating
+        self.detailImageView.heroID = imgHeroId
+        self.synopsisLabel.heroID = synopHeroId
+        self.titleLabel.heroID = titleHeroId
+        self.ratingLabel.heroID = ratingHeroId
+        self.view.heroID = backgroundHeroId
         // Do any additional setup after loading the view.
     }
     
