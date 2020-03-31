@@ -3,7 +3,7 @@ iOS application to find highly rated TV shows currently available on Netflix alo
 
 Status: In-Development
 
-![enter image description here](https://lh3.googleusercontent.com/Jj6r3ZOMx5R9COEtQHfV7U3Im9DPLPs6chK-AjZChLp47TLL34ZKLiVYifda8qM9ucsy1bBSaqQ2vbVpcx2TyOTKoIwbzv1XLvDaXHzMcpHeO5k28zbAiIxGCdut-xsutHA7KUjSXmg=w2400).png)
+![enter image description here](https://lh3.googleusercontent.com/GD8L2_cQXyJVFLQxm7IRLRC312Ob-IoalbJ1L4Qjess4nwDuvaiBPQNttvN8GrHJDVRDqoHiaYGHIVKnPfxff2dhvJBv_DJPPCM4L0dOdeu_gscK_062_eZ2vSutmkpEte9nXtvSgOo=w2400)
 
 ## Installation
 
