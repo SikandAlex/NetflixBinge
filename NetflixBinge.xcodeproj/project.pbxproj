@@ -10,10 +10,7 @@
 		05CEBDBCB9B12E93541DB761 /* Pods_NetflixBinge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EA1BEFEE65401D7B7443E4 /* Pods_NetflixBinge.framework */; };
 		FA18C8E02432FD5000A5FA54 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */; };
 		FAA887642431FEE200B83743 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887632431FEE200B83743 /* DetailViewController.swift */; };
-		FAA88769243244A900B83743 /* mavenpro-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88765243244A800B83743 /* mavenpro-black.ttf */; };
 		FAA8876A243244A900B83743 /* mavenpro-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88766243244A900B83743 /* mavenpro-regular.ttf */; };
-		FAA8876B243244A900B83743 /* mavenpro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88767243244A900B83743 /* mavenpro-bold.ttf */; };
-		FAA8876C243244A900B83743 /* mavenpro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88768243244A900B83743 /* mavenpro-medium.ttf */; };
 		FAA8877024324B5300B83743 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8876F24324B5300B83743 /* ListViewController.swift */; };
 		FAA887722432C03C00B83743 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887712432C03C00B83743 /* BaseViewController.swift */; };
 		FAB43B57242D0441007B8F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B56242D0441007B8F50 /* AppDelegate.swift */; };
@@ -34,10 +31,7 @@
 		EB1A63450DF9BFCD95C309B1 /* Pods-NetflixBinge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixBinge.release.xcconfig"; path = "Target Support Files/Pods-NetflixBinge/Pods-NetflixBinge.release.xcconfig"; sourceTree = "<group>"; };
 		FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAA887632431FEE200B83743 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FAA88765243244A800B83743 /* mavenpro-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-black.ttf"; sourceTree = "<group>"; };
 		FAA88766243244A900B83743 /* mavenpro-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-regular.ttf"; sourceTree = "<group>"; };
-		FAA88767243244A900B83743 /* mavenpro-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-bold.ttf"; sourceTree = "<group>"; };
-		FAA88768243244A900B83743 /* mavenpro-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mavenpro-medium.ttf"; sourceTree = "<group>"; };
 		FAA8876F24324B5300B83743 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FAA887712432C03C00B83743 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FAA887762432DAB700B83743 /* YoshikoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
@@ -52,18 +46,6 @@
 		FAA8877F2432DAB700B83743 /* AkiraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		FAA887802432DAB700B83743 /* IsaoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
 		FAA887812432DAB700B83743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAA887832432DABB00B83743 /* YoshikoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
-		FAA887842432DABB00B83743 /* TextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
-		FAA887852432DABB00B83743 /* HoshiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
-		FAA887862432DABB00B83743 /* MinoruTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
-		FAA887872432DABB00B83743 /* YokoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
-		FAA887882432DABB00B83743 /* TextFieldEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
-		FAA887892432DABB00B83743 /* JiroTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
-		FAA8878A2432DABB00B83743 /* MadokaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
-		FAA8878B2432DABB00B83743 /* KaedeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
-		FAA8878C2432DABB00B83743 /* AkiraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
-		FAA8878D2432DABB00B83743 /* IsaoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
-		FAA8878E2432DABB00B83743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB43B53242D0441007B8F50 /* NetflixBinge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixBinge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB43B56242D0441007B8F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB43B5A242D0441007B8F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,26 +109,6 @@
 			path = TextFieldEffects/TextFieldEffects;
 			sourceTree = "<group>";
 		};
-		FAA887822432DABB00B83743 /* TextFieldEffects */ = {
-			isa = PBXGroup;
-			children = (
-				FAA887832432DABB00B83743 /* YoshikoTextField.swift */,
-				FAA887842432DABB00B83743 /* TextFieldEffects.h */,
-				FAA887852432DABB00B83743 /* HoshiTextField.swift */,
-				FAA887862432DABB00B83743 /* MinoruTextField.swift */,
-				FAA887872432DABB00B83743 /* YokoTextField.swift */,
-				FAA887882432DABB00B83743 /* TextFieldEffects.swift */,
-				FAA887892432DABB00B83743 /* JiroTextField.swift */,
-				FAA8878A2432DABB00B83743 /* MadokaTextField.swift */,
-				FAA8878B2432DABB00B83743 /* KaedeTextField.swift */,
-				FAA8878C2432DABB00B83743 /* AkiraTextField.swift */,
-				FAA8878D2432DABB00B83743 /* IsaoTextField.swift */,
-				FAA8878E2432DABB00B83743 /* Info.plist */,
-			);
-			name = TextFieldEffects;
-			path = TextFieldEffects/TextFieldEffects;
-			sourceTree = "<group>";
-		};
 		FAB43B4A242D0441007B8F50 = {
 			isa = PBXGroup;
 			children = (
@@ -174,11 +136,7 @@
 				FAB43B92242DD3D8007B8F50 /* MovieTableViewController.swift */,
 				FA18C8DF2432FD5000A5FA54 /* LoginViewController.swift */,
 				FAB43B6A242D7380007B8F50 /* Fetcher.swift */,
-				FAA88765243244A800B83743 /* mavenpro-black.ttf */,
-				FAA88767243244A900B83743 /* mavenpro-bold.ttf */,
-				FAA88768243244A900B83743 /* mavenpro-medium.ttf */,
 				FAA887752432DAB700B83743 /* TextFieldEffects */,
-				FAA887822432DABB00B83743 /* TextFieldEffects */,
 				FAA88766243244A900B83743 /* mavenpro-regular.ttf */,
 				FAB43B94242DE857007B8F50 /* ParametersViewController.swift */,
 				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
@@ -254,9 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA88769243244A900B83743 /* mavenpro-black.ttf in Resources */,
-				FAA8876B243244A900B83743 /* mavenpro-bold.ttf in Resources */,
-				FAA8876C243244A900B83743 /* mavenpro-medium.ttf in Resources */,
 				FAB43B63242D0442007B8F50 /* LaunchScreen.storyboard in Resources */,
 				FAB43B60242D0442007B8F50 /* Assets.xcassets in Resources */,
 				FAA8876A243244A900B83743 /* mavenpro-regular.ttf in Resources */,
