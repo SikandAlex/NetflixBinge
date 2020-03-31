@@ -3,7 +3,7 @@ iOS application to find highly rated TV shows currently available on Netflix alo
 
 Login                      |  Browse
 :-------------------------:|:-------------------------:
-![](https://lh3.googleusercontent.com/ZUIoNBZWgMxhW1dKOT1yaNqRP22o6fKYku6IMyKjGIUKm2tMuoT52JJMcR1l2hViU0B9uG7AspFElPFMgXfXeX1GReGGDEyqOT5GEalqJfyDRWACxDB9MltwuiGNXXlGde1uCl8Zfoo=w240)  |  ![](https://lh3.googleusercontent.com/qgphAsE2njk2Ja2hiXpMfRGJ9obuIJQECd2qoKYtF0IO7cnsDncTBnakDefDTuCNH-pyE4Tm-0_kK83iWVP3HVzLFhjoSH97KtfjP60xilMN3W88E7jlX4J90j-NiJ_Px137myzQ1fo=w2400)
+![](https://lh3.googleusercontent.com/ZUIoNBZWgMxhW1dKOT1yaNqRP22o6fKYku6IMyKjGIUKm2tMuoT52JJMcR1l2hViU0B9uG7AspFElPFMgXfXeX1GReGGDEyqOT5GEalqJfyDRWACxDB9MltwuiGNXXlGde1uCl8Zfoo=w240)  |  ![](https://lh3.googleusercontent.com/qgphAsE2njk2Ja2hiXpMfRGJ9obuIJQECd2qoKYtF0IO7cnsDncTBnakDefDTuCNH-pyE4Tm-0_kK83iWVP3HVzLFhjoSH97KtfjP60xilMN3W88E7jlX4J90j-NiJ_Px137myzQ1fo=w240)
 
 
 
