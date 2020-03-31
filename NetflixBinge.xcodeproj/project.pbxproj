@@ -16,7 +16,6 @@
 		FAA8876C243244A900B83743 /* mavenpro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA88768243244A900B83743 /* mavenpro-medium.ttf */; };
 		FAA8877024324B5300B83743 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8876F24324B5300B83743 /* ListViewController.swift */; };
 		FAA887722432C03C00B83743 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA887712432C03C00B83743 /* BaseViewController.swift */; };
-		FAA887922432FAC400B83743 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAA887912432FAC400B83743 /* GoogleService-Info.plist */; };
 		FAB43B57242D0441007B8F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B56242D0441007B8F50 /* AppDelegate.swift */; };
 		FAB43B5B242D0441007B8F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B5A242D0441007B8F50 /* ViewController.swift */; };
 		FAB43B5E242D0441007B8F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB43B5C242D0441007B8F50 /* Main.storyboard */; };
@@ -65,7 +64,6 @@
 		FAA8878C2432DABB00B83743 /* AkiraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		FAA8878D2432DABB00B83743 /* IsaoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
 		FAA8878E2432DABB00B83743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAA887912432FAC400B83743 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAB43B53242D0441007B8F50 /* NetflixBinge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixBinge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB43B56242D0441007B8F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB43B5A242D0441007B8F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 				FAA88766243244A900B83743 /* mavenpro-regular.ttf */,
 				FAB43B94242DE857007B8F50 /* ParametersViewController.swift */,
 				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
-				FAA887912432FAC400B83743 /* GoogleService-Info.plist */,
 				FAB43B5C242D0441007B8F50 /* Main.storyboard */,
 				FAA8876F24324B5300B83743 /* ListViewController.swift */,
 				FAA887632431FEE200B83743 /* DetailViewController.swift */,
@@ -258,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA88769243244A900B83743 /* mavenpro-black.ttf in Resources */,
-				FAA887922432FAC400B83743 /* GoogleService-Info.plist in Resources */,
 				FAA8876B243244A900B83743 /* mavenpro-bold.ttf in Resources */,
 				FAA8876C243244A900B83743 /* mavenpro-medium.ttf in Resources */,
 				FAB43B63242D0442007B8F50 /* LaunchScreen.storyboard in Resources */,
