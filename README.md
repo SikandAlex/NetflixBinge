@@ -1,11 +1,12 @@
 # Netflix Binge iOS App
 iOS application to find highly rated TV shows currently available on Netflix along with how long it will take to binge watch all seasons of the show. Particularly useful during the COVID-19 pandemic!
 
-![enter image description here](https://lh3.googleusercontent.com/eQuUK4OyUXrH-4wymkS_HdV3EK5SYIjxFy2i_Jqubky916C_0Wdv3tSztu8Eug31jxfbSlsBxn-9LBwsVFd1ah5LmZnPMWV5mMpvIknVqd-adn0qEV6mhJOPqkZG6Osn6Ve4nn2A8p4=w2400)
+Login                      |  Browse
+:-------------------------:|:-------------------------:
+![](https://lh3.googleusercontent.com/ZUIoNBZWgMxhW1dKOT1yaNqRP22o6fKYku6IMyKjGIUKm2tMuoT52JJMcR1l2hViU0B9uG7AspFElPFMgXfXeX1GReGGDEyqOT5GEalqJfyDRWACxDB9MltwuiGNXXlGde1uCl8Zfoo=w240)  |  ![](https://lh3.googleusercontent.com/qgphAsE2njk2Ja2hiXpMfRGJ9obuIJQECd2qoKYtF0IO7cnsDncTBnakDefDTuCNH-pyE4Tm-0_kK83iWVP3HVzLFhjoSH97KtfjP60xilMN3W88E7jlX4J90j-NiJ_Px137myzQ1fo=w2400)
 
-![enter image description here](https://lh3.googleusercontent.com/HRi1m2uUtLLfIvLUd_IxRnc1I1QSIt4vh2xIP0Lu79hB9xYKKJKRgcX-sBmRpp2GgupqPKpVImc8L5qNk-nQYie0LSR-e-z10V9ocuFUv4y_nEs-lB4zyOq38R1kkbGepRFNM1km2os=w2400)
 
-![enter image description here](https://lh3.googleusercontent.com/84U4ZEWp_Y905RXZ5zdAlEMVWqUF5iO8JJmVEZpw6f0c28sOQAU6TZldXrhalNWb4iM3dIKkCzCj9JVjepf38UHI7Fzc-LQ2VAf4plga7TG_fYjQvSvv_2SuYcIE1gHXK8E5GP3sKBE=w2400)
+
 
 
 
