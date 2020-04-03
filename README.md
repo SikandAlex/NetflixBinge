@@ -15,7 +15,7 @@ Clone the repo and open NetflixBinge.xcworkspace
 
 Build and run the app on the iOS simulator or connect your iPhone and install directly to your physical device.
 
-**Download GoogleServive-Info.plist from Firebase Console and add to your project or it will not work!**
+**Download GoogleService-Info.plist from Firebase Console and add to your project or it will not work!**
 
 ## APIs and External Libraries
 Unofficial Netflix Global Search API [https://rapidapi.com/unogs/api/unogs](https://rapidapi.com/unogs/api/unogs)
