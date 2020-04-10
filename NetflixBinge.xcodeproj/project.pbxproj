@@ -69,14 +69,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FA557E832433DC1400344944 /* Supporting Files */ = {
+		FA557E832433DC1400344944 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				FAB43B6A242D7380007B8F50 /* Fetcher.swift */,
-				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
 				FAB43B90242DD31E007B8F50 /* MovieCell.swift */,
 			);
-			path = "Supporting Files";
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		FA557E842433DC3900344944 /* ViewControllers */ = {
@@ -114,12 +112,22 @@
 				FAB43B64242D0442007B8F50 /* Info.plist */,
 				FA421816243E9D780038BBC9 /* GoogleService-Info.plist */,
 				FA557E842433DC3900344944 /* ViewControllers */,
-				FA557E832433DC1400344944 /* Supporting Files */,
+				FAF5E5A624405CA400E5402F /* API Helpers */,
+				FA557E832433DC1400344944 /* CustomViews */,
 				FAB43B5C242D0441007B8F50 /* Main.storyboard */,
 				FAB43B5F242D0442007B8F50 /* Assets.xcassets */,
 				FAB43B61242D0442007B8F50 /* LaunchScreen.storyboard */,
 			);
 			path = NetflixBinge;
+			sourceTree = "<group>";
+		};
+		FAF5E5A624405CA400E5402F /* API Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB43B6A242D7380007B8F50 /* Fetcher.swift */,
+				FAB43B6C242D73E7007B8F50 /* Responses.swift */,
+			);
+			path = "API Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
