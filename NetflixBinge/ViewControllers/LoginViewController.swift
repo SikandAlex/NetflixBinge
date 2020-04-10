@@ -31,32 +31,34 @@ extension UIViewController
 }
 
 class LoginViewController: UIViewController, GIDSignInDelegate {
+    
+    @IBOutlet weak var emailField: SkyFloatingLabelTextField!
+    @IBOutlet weak var passwordField: SkyFloatingLabelTextField!
+    
+    @IBAction func googleSignIn(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupToHideKeyboardOnTapOnView()
         GIDSignIn.sharedInstance().clientID = "946986530604-q21roe9mfsgc0k7an1fsl6kikseb5q1d.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self as! GIDSignInDelegate
-    GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.presentingViewController = self
     }
     
-    // Once the user is signed in via Google, use their crednetial to sign into Firebase
+    // Once the user is signed in via Google, use their credential to sign into Firebase
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print(error.localizedDescription)
-            
             return
         }
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication.accessToken)!)
-    
-        
-        
         
         // When user is signed in
         Auth.auth().signIn(with: credential, completion: { (user, error) in
             // Handle Errors
-            
             if let error = error {
                 print(error.localizedDescription)
                 if error != nil {
@@ -68,49 +70,23 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
                 }
                 return
             }
+            // If login was successful then move to the next screen
             else {
-                guard let newUserStatus = user?.additionalUserInfo?.isNewUser else {return}
-                if newUserStatus == true {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "initialVC")
-                   
-                    controller.hero.isEnabled = true
-                    controller.modalPresentationStyle = .fullScreen
-                    controller.hero.modalAnimationType = .slide(direction: .left)
-                    //controller.nametext = (result?.user.email)!
-                    self.present(controller, animated: true, completion: nil)
-                }
-                else {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    
-                    let controller = storyboard.instantiateViewController(withIdentifier: "initialVC") 
-                    controller.hero.isEnabled = true
-                    controller.hero.modalAnimationType = .slide(direction: .left)
-                    controller.modalPresentationStyle = .fullScreen
-                    self.present(controller, animated: true, completion: nil)
-                }
-                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "initialVC")
+                controller.hero.isEnabled = true
+                controller.hero.modalAnimationType = .slide(direction: .left)
+                controller.modalPresentationStyle = .fullScreen
+                self.present(controller, animated: true, completion: nil)
             }
         })
     }
     
-    
-    
-    @IBAction func googleSignIn(_ sender: Any) {
-        GIDSignIn.sharedInstance().signIn()
-    }
-    
-    
- 
-    @IBOutlet weak var emailField: SkyFloatingLabelTextField!
-    
-    @IBOutlet weak var passwordField: SkyFloatingLabelTextField!
-    
-    
+    // Sign-In with Email/Password
     @IBAction func signIn(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailField.text ?? "", password: passwordField.text ?? "") { [weak self] authResult, error in
           guard let strongSelf = self else { return }
-          // ...
+            // Handle errors
             if error != nil {
                 let alert = UIAlertController(title: "Login Error", message: error?.localizedDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: { action in
@@ -120,27 +96,14 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
             }
             else {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                
                 let controller = storyboard.instantiateViewController(withIdentifier: "initialVC")
-                //controller.hero.isEnabled = true
-                //controller.hero.modalAnimationType = .slide(direction: .left)
+                controller.hero.isEnabled = true
+                controller.hero.modalAnimationType = .slide(direction: .left)
                 controller.modalPresentationStyle = .fullScreen
                 self!.present(controller, animated: true, completion: nil)
-                }
+            }
         }
     }
     
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

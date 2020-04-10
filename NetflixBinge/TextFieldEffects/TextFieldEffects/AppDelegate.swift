@@ -14,46 +14,30 @@ import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-   
-
+    var window: UIWindow?
     
+    // Handle Google Sign In
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
       return GIDSignIn.sharedInstance().handle(url)
     }
-
     
-
-    var window: UIWindow?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Configure Firebase when the app starts
         FirebaseApp.configure()
+        
+        // Add a listener that returns to the login screen if the user ever signs out or is no longer authenticated
         let handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            if user != nil {
-                //self.navigationController.popToRootViewController(animated: true)
-                print("Changed")
-            }
-            else {
-                
-                print("user exists")
+            if user == nil {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let initialViewController = storyboard.instantiateViewController(withIdentifier: "loginVC")
                 self.window?.rootViewController = initialViewController
                 self.window?.makeKeyAndVisible()
-                //self.navigationController?.popToRootViewController(animated: true)
-                
-                
             }
         }
-        
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-  
-
 
 }
 

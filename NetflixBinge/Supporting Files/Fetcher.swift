@@ -17,32 +17,21 @@ final class Fetcher {
     var api_key = "f8ae9a386c3c783ce0bd4eb3bfe9862b"
     
     var tmdb_url = "https://api.themoviedb.org/3"
+   
     
-    var search_endpt = "/search"
-    
-    var movie_suggestions = "/movie?"
-    var show_suggestions = "/tv?"
-    
-    var movie_id_query = "/movie/"
-    var show_id_query = "/tv/"
+   // var show_id_query = "/tv/"
   
   
-    func fetchShows(category: String, startRating: Int, endRating: Int, completionHandler: @escaping ([Show]) -> Void) {
-        var cat = ""
-        if category == "Movies" {
-            cat = "movie"
-        }
-        else if category == "TV Shows" {
-            cat = "series"
-        }
-        let domainUrlString = "https://unogsng.p.rapidapi.com/search?type=" + cat + "&orderby=date"
-        print(domainUrlString)
-    let url = URL(string: domainUrlString)!
-    let session = URLSession.shared
-    var request = URLRequest(url: url)
-    request.addValue("unogsng.p.rapidapi.com", forHTTPHeaderField: "x-rapidapi-host")
-    request.addValue("", forHTTPHeaderField: "x-rapidapi-key")
-    request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+    func fetchShows(completionHandler: @escaping ([Show]) -> Void) {
+        let endpoint = "https://unogsng.p.rapidapi.com/search?type=series&orderby=date"
+        let url = URL(string: endpoint)!
+        let session = URLSession.shared
+        var request = URLRequest(url: url)
+        
+        // PUT API KEYS IN CONFIGURATION FILE
+        request.addValue("unogsng.p.rapidapi.com", forHTTPHeaderField: "x-rapidapi-host")
+        request.addValue("cb1bb20187msha88ad05fac42946p199f13jsne675ffd85911", forHTTPHeaderField: "x-rapidapi-key")
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
 
     let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
       
@@ -69,7 +58,6 @@ final class Fetcher {
   }
     
     func convertId(imdbId: String, completionHandler: @escaping (Int) -> Int?)  {
-        //var mreq_url = tmdb_url + "/find" + show_id_query + String(show_id) + "?api_key=" + api_key
         var mreq_url = tmdb_url + "/find/" + imdbId + "?api_key=" + api_key + "&external_source=imdb_id"
         let session = URLSession.shared
         guard let url = URL(string: mreq_url) else {return}
@@ -94,7 +82,7 @@ final class Fetcher {
     }
     
     func getRuntime(tmdbId: Int, completionHandler: @escaping (Int, Int) -> (String)?) {
-        var mreq_url = tmdb_url + show_id_query + String(tmdbId) + "?api_key=" + api_key
+        var mreq_url = tmdb_url + "/tv/" + String(tmdbId) + "?api_key=" + api_key
         let session = URLSession.shared
         guard let url = URL(string: mreq_url) else {return}
         let task = session.dataTask(with: url) { (data, response, error) in

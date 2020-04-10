@@ -210,13 +210,16 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Save for Later"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Watch On Netflix"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleFontName" value="AvenirNext-Bold"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="rightIconString" value="fa"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="rightIconFontName" value="bookmark-o"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="0.69221782679999999" green="0.26011028889999999" blue="0.20389285679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
