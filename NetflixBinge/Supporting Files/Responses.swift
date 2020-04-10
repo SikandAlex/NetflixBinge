@@ -8,14 +8,15 @@
 
 import Foundation
 
+// Response from UNOGS API is nested so we need two structures
+
 struct ShowData: Codable {
     let results: [Show]?
     let total: Int?
     
     enum CodingKeys: String, CodingKey {
-        //case results
-        case total = "total"
-        case results = "results"
+        case total
+        case results
     }
 }
 

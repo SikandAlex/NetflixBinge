@@ -18,7 +18,7 @@
 		FAB43B6D242D73E7007B8F50 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B6C242D73E7007B8F50 /* Responses.swift */; };
 		FAB43B91242DD31E007B8F50 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B90242DD31E007B8F50 /* MovieCell.swift */; };
 		FAB43B93242DD3D8007B8F50 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43B92242DD3D8007B8F50 /* MovieTableViewController.swift */; };
-		FAEFFEBC24404E9900B30040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFFEBB24404E9900B30040 /* AppDelegate.swift */; };
+		FAF5E5A524405BB700E5402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E5A424405BB700E5402F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		FAB43B6C242D73E7007B8F50 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		FAB43B90242DD31E007B8F50 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FAB43B92242DD3D8007B8F50 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
-		FAEFFEBB24404E9900B30040 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TextFieldEffects/TextFieldEffects/AppDelegate.swift; sourceTree = "<group>"; };
+		FAF5E5A424405BB700E5402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = /Users/alex/Desktop/NetflixBinge/NetflixBinge/AppDelegate.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 		FAB43B55242D0441007B8F50 /* NetflixBinge */ = {
 			isa = PBXGroup;
 			children = (
+				FAF5E5A424405BB700E5402F /* AppDelegate.swift */,
 				FAB43B64242D0442007B8F50 /* Info.plist */,
-				FAEFFEBB24404E9900B30040 /* AppDelegate.swift */,
 				FA421816243E9D780038BBC9 /* GoogleService-Info.plist */,
 				FA557E842433DC3900344944 /* ViewControllers */,
 				FA557E832433DC1400344944 /* Supporting Files */,
@@ -260,7 +260,7 @@
 				FAA887642431FEE200B83743 /* DetailViewController.swift in Sources */,
 				FAB43B6B242D7380007B8F50 /* Fetcher.swift in Sources */,
 				FAB43B6D242D73E7007B8F50 /* Responses.swift in Sources */,
-				FAEFFEBC24404E9900B30040 /* AppDelegate.swift in Sources */,
+				FAF5E5A524405BB700E5402F /* AppDelegate.swift in Sources */,
 				FAB43B91242DD31E007B8F50 /* MovieCell.swift in Sources */,
 				FAB43B93242DD3D8007B8F50 /* MovieTableViewController.swift in Sources */,
 			);
