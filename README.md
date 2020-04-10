@@ -7,16 +7,6 @@ Login                      |  Browse
 :-------------------------:|:-------------------------:
 ![](https://lh3.googleusercontent.com/ZUIoNBZWgMxhW1dKOT1yaNqRP22o6fKYku6IMyKjGIUKm2tMuoT52JJMcR1l2hViU0B9uG7AspFElPFMgXfXeX1GReGGDEyqOT5GEalqJfyDRWACxDB9MltwuiGNXXlGde1uCl8Zfoo=w240)  |  ![](https://lh3.googleusercontent.com/qgphAsE2njk2Ja2hiXpMfRGJ9obuIJQECd2qoKYtF0IO7cnsDncTBnakDefDTuCNH-pyE4Tm-0_kK83iWVP3HVzLFhjoSH97KtfjP60xilMN3W88E7jlX4J90j-NiJ_Px137myzQ1fo=w240)
 
-## Installation
-
-You must be using a Mac with Xcode installed. App will be distributed over TestFlight in the near future.
-
-Clone the repo and open NetflixBinge.xcworkspace
-
-Build and run the app on the iOS simulator or connect your iPhone and install directly to your physical device.
-
-**Download GoogleService-Info.plist from Firebase Console and add to your project or it will not work!**
-
 ## APIs and External Libraries
 Unofficial Netflix Global Search API [https://rapidapi.com/unogs/api/unogs](https://rapidapi.com/unogs/api/unogs)
 
